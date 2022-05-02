@@ -52,6 +52,7 @@
 				var now = new Date();
 				paused_time = "" + now.getHours() + ":" + now.getMinutes() + ":" + now.getSeconds();
 				paused_title = decodeURIComponent(getParameterByName('title'));
+				window.title = "⏸ " + paused_title;
 				$('.pause-link').attr('href', paused_page);
 				$('.pause-link').html(paused_page);
 				$('.pause-title').html(paused_title);
@@ -92,6 +93,6 @@
 			</br><span style="color: #888;">^ bookmark URL (click and copy)</span>
 		</p>
 	</div>
-	<footer>Pause &copy; 2012 - Jo�o Pedro Francese</footer>
+	<footer>Pause &copy; 2012 - João Pedro Francese</footer>
 </body>
 </html>
