@@ -52,7 +52,7 @@
 				var now = new Date();
 				paused_time = "" + now.getHours() + ":" + now.getMinutes() + ":" + now.getSeconds();
 				paused_title = decodeURIComponent(getParameterByName('title'));
-				window.title = "⏸ " + paused_title;
+				window.document.title = "⏸ " + paused_title;
 				$('.pause-link').attr('href', paused_page);
 				$('.pause-link').html(paused_page);
 				$('.pause-title').html(paused_title);
